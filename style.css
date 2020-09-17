@@ -1,0 +1,290 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Righteous&display=swap");
+/* Globals */
+body {
+  overflow-x: hidden;
+}
+
+section{
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+}
+
+/* Typhography */
+.font-right {
+  font-family: "Righteous", cursive;
+}
+
+.font-comfort {
+  font-family: "Comfortaa", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.main-color-bg {
+  background-color: #f4b930;
+}
+
+.main-color-text {
+  color: #f4b930;
+}
+
+/*  Hedaer */
+header {
+  background-color: #381f14;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+header .nav-link {
+  color: #fff;
+}
+
+header .nav-link.active {
+  color: #df002d;
+  position: relative;
+}
+
+header .nav-link.active::after {
+  content: "";
+  display: block;
+  background-image: url(./assets/currentt.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -12px;
+  right: -2%;
+  width: 110%;
+  height: 13px;
+}
+
+header .nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Home */
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+
+.home-img {
+  width: 800px;
+  margin: 40px 0 0 60px;
+}
+
+.home-heading h1 {
+  font-size: 6.5rem;
+}
+
+.home-heading p,
+.home-heading a {
+  font-weight: 600;
+}
+
+.home-heading h1,
+.home-heading p {
+  margin-bottom: 0;
+}
+
+/* About us */
+#about-us .col-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-us .col-4 {
+  justify-content: flex-end;
+}
+
+.about-us-heading {
+  flex-direction: column;
+}
+
+.about-us-heading h1 {
+  font-size: 6.5rem;
+}
+
+.about-us-heading p {
+  font-weight: 600;
+}
+
+.about-us-img {
+  width: 700px;
+  margin: 40px 115px 0 0;
+}
+
+/* Services */
+#services h1 {
+  font-size: 6.5rem;
+}
+
+.meta {
+  flex-direction: column;
+  width: 300px;
+}
+
+.meta-row {
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
+
+.services-img {
+  height: 300px;
+}
+
+.meta h5 {
+  font-weight: 600;
+}
+
+.meta p {
+  line-height: 1.1em;
+}
+
+/* Contact */
+#contact .container{
+  padding-right: 0;
+}
+
+#contact .container > .row .col-6:nth-child(2) {
+  padding-right: 0;
+}
+
+#contact .row {
+  width: 100%;
+}
+
+#contact h1 {
+  font-size: 6.5rem;
+}
+
+#contact form {
+  background: #FFFFFF;
+  padding: 30px 40px;
+  border: 2px solid #000;
+  border-top: 3px solid #000;
+  border-right: 7px solid #000;
+}
+
+#contact form h5 {
+  font-weight: 900;
+}
+
+#contact form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#contact form,
+#contact form input:not(.submit-btn),
+#contact form textarea {
+  width: 100%;
+}
+
+#contact form input {
+  height: 40px;
+  border: 1px solid #000;
+}
+
+#contact form textarea {
+  border: 1px solid #000;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 115px;
+  display: block;
+  margin-left: auto;
+  background: #42b72e;
+  border-right: 4px solid #000 !important;
+}
+
+.adresses {
+  font-size: 22px;
+}
+
+.adresses p {
+  margin-bottom: 50px;
+  font-family: "Comfortaa", cursive;
+}
+
+/* Footer */
+#footer {
+  height: 300px;
+  background: #FFFFFF;
+  position: relative;
+}
+
+#footer::before {
+  content: "";
+  display: block;
+  background-image: url(./assets/flow.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 29px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-nav {
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+.footer-nav ul{
+  z-index: 1000;
+}
+
+#footer .nav-item {
+  margin: 0px 30px;
+}
+
+#footer .nav-link {
+  color: #f4b930;
+  text-decoration: underline;
+  font-family: "Comfortaa", cursive;
+  font-size: 21px;
+}
+
+#copyright {
+  background-color: #c2be66;
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
